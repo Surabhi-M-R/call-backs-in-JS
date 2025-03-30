@@ -84,3 +84,4 @@ const sub=(a,b)=>{
     return a-b;
 }
 console.log(mathOperation(5,6,add));
+
