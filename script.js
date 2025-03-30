@@ -61,3 +61,26 @@ getData(1,()=>{
         })
     });
 });
+
+function processUserInput(name,callBack){// higher order function
+    console.log(" Recieved input: "+name);
+    callBack(name);
+}
+
+function greetUser(name){// call back function 
+    console.log(`Hello! ${name}`)
+}
+processUserInput(" surabhi ",greetUser);
+
+
+const mathOperation=(a,b,operation)=>{
+    return operation(a,b);
+};
+const add=(a,b)=>{
+    return a+b;
+};
+
+const sub=(a,b)=>{
+    return a-b;
+}
+console.log(mathOperation(5,6,add));
